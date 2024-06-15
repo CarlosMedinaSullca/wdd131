@@ -36,6 +36,10 @@ h1 {
 	text-align: center;
     font-family: sans-serif;
 }
+.navigation a:hover {
+	font-weight: 700;
+}
+
 
 main {
     display: grid;
