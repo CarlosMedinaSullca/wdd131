@@ -17,8 +17,7 @@
 .top {
     grid-column:1/4;
     background-color: black;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 .principal {
     grid-column:1/3;

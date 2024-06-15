@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Carlos Medina</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals|Carlos Manuel Medina Sullca|Intro profile"/>
+    <meta name="author" content="Carlos Medina"/>
+    <link href="styles/base.css" rel="stylesheet"/>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Medina</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Carlos Medina S.</h1>
+        <nav>
+            <ul class="navigation wrap">
+                <li><a href="www.linkedin.com/in/carlosmms" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" title="Ilearn">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/3?lang=spa&id=p28-p30#p28" title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card about">
+            <h2>About me</h2>
+            <p> Hi, I am Carlos Medina. I was born in the south of Bolivia, in a city called Tarija. I am currently working in a laboratory as a the quality control manager. I am also the owner of a small essential oils producing company. I enjoy working out and running and learning new skills.</p>
+            <img src="images/profile.jpeg" alt="A current photo of me"/>
+            <h3>Tarija Bolivia</h3>
+            <figure class="tarija">
+                <img src="images/tarijas.png" alt="A picture of Tarija">
+                <figcaption>Tarija city</figcaption>
+            </figure>
+            <p>Tarija is a small city in the south of Bolivia. It is recognized in the country because the production of grapes, chamomile and oregano. In the last 20 years there were big gas sources in the city, for many years it was one of the main economonic strength of the country. Currently the resources of gas have decreased and new explorations are being performed.</p>
+        </section>
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <ul class="listreso">
+                <li><a href="https://developer.mozilla.org/en-US/" title="MDN">MDN</a></li>
+                <li><a href="https://www.w3schools.com/" title="W3schools">W3schools</a></li>
+                <li><a href="https://www.smashingmagazine.com/" title="Smashingmagazine">Smashing magazine</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Carlos Medina | Bolivia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
 </body>
 </html>

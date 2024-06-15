@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-color: #4295b1;
+    --secondary-color: #3dafc7;
+    --accent1-color: #38C9DD;
+    --accent2-color: #37DDD5;
+
+    --heading-font: HankenGrotesk, sans;
+    --paragraph-font: sans-serif;
+    --nav-background-color: #4295b1;
+    --nav-link-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    color:white;
+    background-color:rgb(35, 107, 129);
+    padding: 1.5rem;
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	align-items: center;
+    background-color: rgb(56, 55, 55);
+}
+.navigation li {
+	flex: 1 1 auto; 
+}
+.wrap {
+   flex-wrap: wrap;
+} 
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+main {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+}
+.about {
+    grid-column: 1/3;
+    display: grid;
+    grid-template: auto auto auto auto / 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.about h2 {
+    grid-column: 1/4;
+    text-align: center;
+    background-color:rgb(207, 218, 221);
+    height: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+section :nth-child(2) {
+    grid-column: 1/3;
+}
+.about img {
+    grid-column: 3/4;    
+    max-width: 90%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+}
+.about h3 {
+    grid-column: 1/4;
+    text-align: center; 
+}
+.tarija {
+    grid-column: 1/2;
+    padding: 0.5rem;
+}
+section :last-child {
+    grid-column: 2/4;
+}
+.resources {
+    grid-column: 3/4;
+    display: grid;
+}
+
+.resources h2 {
+    grid-column: 1/4;    
+    text-align: center;
+    background-color:rgb(207, 218, 221);
+    height: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.listreso {
+    grid-column: 1/4;
+}
+.listreso a {
+	color: black;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-family: var(--paragraph-font);
+}
+img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(35, 107, 129);
+    height: 4rem;
+    align-content: center;
+    color: rgb(207, 218, 221);
+    
+}
+
+footer p {
+    padding: 0.2rem;
+}
+ 
+p {
+    padding: 1.5rem;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(35, 107, 129) ;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
