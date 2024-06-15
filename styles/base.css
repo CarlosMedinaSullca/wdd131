@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --primary-color: #4295b1;
-    --secondary-color: #3dafc7;
-    --accent1-color: #38C9DD;
-    --accent2-color: #37DDD5;
-
     --heading-font: HankenGrotesk, sans;
     --paragraph-font: sans-serif;
-    --nav-background-color: #4295b1;
-    --nav-link-color: white;
+    
 }
 * {
     margin: 0;
