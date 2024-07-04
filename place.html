@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Carlos Medina</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals|Carlos Manuel Medina Sullca|Place page"/>
+    <meta name="author" content="Carlos Medina"/>
+    <link href="styles/place.css" rel="stylesheet"/>
+    <link href="styles/place-large.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bolivia</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media=" (min-width: 1000px) ">
+                <img src="images/hero-small.webp" alt="A car in the middle of salar de Uyuni" width="1500" height="750">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <p> <i>Area:</i> 1,098,581 sq Km</p>
+            <p> <i>Population:</i> 12,566,548</p>
+            <p> <i>Capital:</i> La paz</p>
+            <p> <i>Currency:</i> Boliviano</p>
+            <p> <i>Time zone:</i> UTC-4</p>
+            <p> <i>Calling code:</i> +591</p>
+            <p> <i>Internet TLD:</i> .bo</p>             
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/1530392_weather_sun_sunny_temperature_icon.svg" alt="Wheather icon">
+            <p> <i>Temperature:</i> <span id="currentTemperature"></span> °C</p>
+            <p> <i>Conditions:</i> Sunny</p>
+            <p> <i>Wind:</i> <span id="windSpeed"></span> km/h</p>
+            <p> <i>Wind chill: </i> <span id="windChill"></span> °C</p>         
+        </div>             
+    </main>
+    <footer>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> | Carlos Medina | Bolivia</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+    </footer>
+</body>
+</html>

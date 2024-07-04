@@ -1,0 +1,64 @@
+:root {
+    --primary-color: rgba(191, 4, 17, 0.651);
+    --secondary-color: rgba(254, 238, 0, 0.6);
+    --accent1-color: #007934;
+
+    --heading-font: "Roboto", sans-serif;
+    --paragraph-font: 700, sans-serif;
+    --header-botom-color: white;
+}
+
+@media (min-width: 1000px) {
+    .weather img {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "🌞";
+    }
+
+    main {
+        position: relative;
+        padding:0;
+    }
+
+    .data {
+        display: block;
+        background-color: var(--secondary-color);
+        position: absolute;
+        padding: 1rem;
+        top: 3rem;
+        left: 13rem;
+        
+    }
+
+    .weather {
+        display: block;
+        background-color: var(--secondary-color);
+        position: absolute;
+        padding: 1rem;
+        right: 13rem;
+        bottom: 5rem;        
+    }
+
+    .hero source{
+        max-width: 100%;
+        top: auto;
+    }
+
+    div p{
+        padding: 0.5rem;
+        opacity: 1;
+    }
+
+    div h2 {
+        background-color: var(--accent1-color);
+        padding-left: 1rem;
+        color:white;
+        position:relative;
+        top: 0.1rem;
+        left: -1.5rem;
+        width:10rem;
+    }
+
+}
