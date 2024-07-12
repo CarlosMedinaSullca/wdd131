@@ -1,0 +1,41 @@
+* {
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: grid;
+}
+
+main {
+    display: grid;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 2rem;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+footer {
+    text-align: center;
+    height: 4rem;
+    align-content: center;
+    color: black;    
+}
+
+
+footer p {
+    padding: 0.2rem;
+}

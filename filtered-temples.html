@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Carlos Medina</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals|Carlos Manuel Medina Sullca|Temples page"/>
+    <meta name="author" content="Carlos Medina"/>
+    <link href="styles/filtered-temples.css" rel="stylesheet"/>
+    <link href="styles/filtered-temples-large.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="hamMenu"></button>
+        <nav class="navigation">
+            <a href="#" title="Home" id="returnHome">Home</a>
+            <a href="#" title="Old" id="oldTemples">Old</a>
+            <a href="#" title="New" id="newTemples">New</a>
+            <a href="#" title="Large" id="largeTemples">Large</a>
+            <a href="#" title="Small" id="smallTemples">Small</a>
+        </nav>  
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="filtTemples">           
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Carlos Medina | Bolivia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
