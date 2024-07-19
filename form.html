@@ -18,14 +18,17 @@
     </header>
     <main> 
         <form method="get" action="review.html" class="wf1">        
-             <legend>Product Name*</legend>
+            <fieldset>
+                <legend>Product Name*</legend>
 
-             <label>
-                <select id="product" name="product" required="">
-                    <option disabled value="" selected>Select a Product...</option>
-                </select>
-             </label>
-            <legend>Overall Rating</legend>
+                <label>
+                   <select id="product" name="product" required="">
+                       <option disabled value="" selected>Select a Product...</option>
+                   </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Overall Rating</legend>
             <div class="rating">
                 <div class="star">
                     <label>&star;</label>
@@ -47,12 +50,17 @@
                 <div class="star"><label>&star;&star;&star;&star;&star;</label></label>
                     <input type="radio" id="five" name="rating" value="fiveS" required="">
                 </div> 
-            </div>          
+            </div>
+            </fieldset>          
             
-            <legend>Date of installation </legend>
+            <fieldset>
+                <legend>Date of installation </legend>
             <label><input type="date" name="completeDate"></label>
+            </fieldset>
+            
 
-            <legend>Which features did you find useful in the product?</legend>
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
             <label>(Check all that apply)</label>
 
             <div class="check">
@@ -61,13 +69,16 @@
                 <label><input type="checkbox" id="Performance" name="Performance" value="Performance">Performance</label>
                 <label><input type="checkbox" id="Design" name="Design" value="Design">Design</label>
             </div>
+            </fieldset>
             
-
-            <legend>Written Review (Optional)</legend>
-            <label><textarea id="review" name="review"></textarea></label>
-
-            <legend>Your name (optional)</legend>
+            <fieldset>
+                <legend>Written Review (Optional)</legend>
+                <label><textarea id="review" name="review"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Your name (optional)</legend>
             <label><input type="text" id="name" name="name"></label>
+            </fieldset>           
 
             <input type="submit" value="Post review">
     

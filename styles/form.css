@@ -39,7 +39,7 @@ main {
 
 .wf1 legend {
     font-family: var(--paragraph-font);
-    padding: 1rem 0;
+    padding: 1rem;
     color: var(--secondary-color3);
     font-weight: 600;
 }
@@ -106,4 +106,8 @@ footer {
 
 footer p {
     padding: 0.2rem;
+}
+
+fieldset {
+    border: 0;
 }
