@@ -1,0 +1,109 @@
+:root {
+    --primary-color1: rgb(43, 123, 156);
+    --primary-color2: rgb(10, 64, 64);
+    --primary-color3: rgb(43, 131, 140);
+    --secondary-color1: rgb(169, 237, 244);
+    --secondary-color2: rgb(147, 183, 191);
+    --secondary-color3: rgb(13, 13, 13);
+    --secondary-color4: rgb(242, 242, 242);
+    --accent1-color: rgb(248, 83, 7);
+    --accent2-color: rgb(189, 97, 192);
+
+    --heading-font: "Playfair Display", serif; 
+    --paragraph-font: "Roboto", sans-serif;
+}
+
+
+* {
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
+
+}
+
+header {
+    display: grid;
+    background-color: var(--primary-color2);
+    padding: 2rem;
+    color:var(--secondary-color4)
+}
+main {
+    display: grid;  
+    padding: 1rem;
+}
+
+/*Form styling*/
+.wf1 {
+    background-color: var(--secondary-color2);
+    padding: 1.5rem;
+}
+
+.wf1 legend {
+    font-family: var(--paragraph-font);
+    padding: 1rem 0;
+    color: var(--secondary-color3);
+    font-weight: 600;
+}
+
+.wf1 label {
+    font-family: var(--paragraph-font);
+    display: block;
+    padding: 0.5rem;
+}
+.wf1 input[type="date"],
+.wf1 input[type="text"],
+.wf1 select,
+.wf1 textarea,
+.wf1 input[type="number"] {
+    background-color: var(--secondary-color4);
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 0.7rem;
+    color: var(--secondary-color3);
+    width: 100%;
+    max-width: 80%;
+    font-family: var(--paragraph-font);
+}
+
+
+
+.star {
+    display: flex;
+    flex-direction: column;
+}
+
+.wf1 .rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.wf1 input[type="radio"] {
+    
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(rgb(189, 97, 192), rgb(146, 79, 148));
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color2);
+    height: 4rem;
+    align-content: center;
+    color: var(--secondary-color4);
+    padding: 1rem;    
+}
+
+footer p {
+    padding: 0.2rem;
+}

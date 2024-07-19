@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Carlos Medina</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals|Carlos Manuel Medina Sullca|Form assingment"/>
+    <meta name="author" content="Carlos Medina"/>
+    <link href="styles/form.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main> 
+        <form method="get" action="review.html" class="wf1">        
+             <legend>Product Name*</legend>
+
+             <label>
+                <select id="product" name="product" required="">
+                    <option disabled value="" selected>Select a Product...</option>
+                </select>
+             </label>
+            <legend>Overall Rating</legend>
+            <div class="rating">
+                <div class="star">
+                    <label>&star;</label>
+                    <input type="radio" id="one" name="rating" value="oneS" required="">
+                </div>
+                <div class="star">
+                    <label>&star;&star;</label>
+                <input type="radio" id="two" name="rating" value="twoS" required="">
+                </div>
+                <div class="star">
+                    <label>&star;&star;&star;</label>
+                <input type="radio" id="three" name="rating" value="threeS" required="">
+                </div>
+                
+                <div class="star">
+                    <label>&star;&star;&star;&star;</label>
+                <input type="radio" id="four" name="rating" value="fourS" required="">
+                </div>
+                <div class="star"><label>&star;&star;&star;&star;&star;</label></label>
+                    <input type="radio" id="five" name="rating" value="fiveS" required="">
+                </div> 
+            </div>          
+            
+            <legend>Date of installation </legend>
+            <label><input type="date" name="completeDate"></label>
+
+            <legend>Which features did you find useful in the product?</legend>
+            <label>(Check all that apply)</label>
+
+            <div class="check">
+                <label><input type="checkbox" id="Durability" name="Durability" value="Durability">Durability</label>
+                <label><input type="checkbox" id="Ease" name="Ease" value="Ease">Ease of use</label>
+                <label><input type="checkbox" id="Performance" name="Performance" value="Performance">Performance</label>
+                <label><input type="checkbox" id="Design" name="Design" value="Design">Design</label>
+            </div>
+            
+
+            <legend>Written Review (Optional)</legend>
+            <label><textarea id="review" name="review"></textarea></label>
+
+            <legend>Your name (optional)</legend>
+            <label><input type="text" id="name" name="name"></label>
+
+            <input type="submit" value="Post review">
+    
+        </form>           
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Carlos Medina | Bolivia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

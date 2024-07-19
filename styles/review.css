@@ -1,0 +1,54 @@
+:root {
+    --primary-color1: rgb(43, 123, 156);
+    --primary-color2: rgb(10, 64, 64);
+    --primary-color3: rgb(43, 131, 140);
+    --secondary-color1: rgb(169, 237, 244);
+    --secondary-color2: rgb(147, 183, 191);
+    --secondary-color3: rgb(13, 13, 13);
+    --secondary-color4: rgb(242, 242, 242);
+    --accent1-color: rgb(248, 83, 7);
+    --accent2-color: rgb(189, 97, 192);
+
+    --heading-font: "Playfair Display", serif; 
+    --paragraph-font: "Roboto", sans-serif;
+}
+
+
+* {
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
+
+}
+
+header {
+    display: grid;
+    background-color: var(--primary-color2);
+    padding: 2rem;
+    color:var(--secondary-color4)
+}
+main {
+     
+    padding: 1rem;
+    height: 45rem;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+p{ padding: 2rem;}
+
+
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color2);
+    height: 4rem;
+    align-content: center;
+    color: var(--secondary-color4);
+    padding: 1rem;    
+}
+
+footer p {
+    padding: 0.2rem;
+}
