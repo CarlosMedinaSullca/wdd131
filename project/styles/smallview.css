@@ -1,0 +1,145 @@
+:root {
+    --primary-color1: rgb(43, 123, 156);
+    --primary-color2: rgb(10, 64, 64);
+    --primary-color3: rgb(43, 131, 140);
+    --secondary-color1: rgb(169, 237, 244);
+    --secondary-color2: rgb(147, 183, 191);
+    --secondary-color3: rgb(13, 13, 13);
+    --secondary-color4: rgb(242, 242, 242);
+    --accent1-color: rgb(248, 83, 7);
+    --accent2-color: rgb(189, 97, 192);
+
+    --paragraph-font: "Playfair Display", serif; 
+    --heading-font: "Roboto", sans-serif;
+}
+
+* {
+    font-family: var(--heading-font);
+	margin: 0 auto;
+}
+
+h1 {
+	color: white;
+}
+
+h2 {
+    
+    font-weight:500;
+    color: black;
+    text-align: center;
+}
+header {
+	background-color: #e24b05;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px #e24b05;
+}
+
+
+main {
+	margin: 1rem auto;
+	display: grid;
+    grid-gap: 1rem;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem ;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+
+div {
+    display: grid;
+    justify-items: center;
+}
+
+main p {
+    text-align: justify;
+    text-justify:inter-word;
+}
+
+input[type="button"],
+input[type="submit"]
+ {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: var(--accent1-color);
+    border-color: var(--accent1-color);
+    border-radius: 0.3rem;
+    color: var(--secondary-color4);
+}
+
+input[type="text"] {
+    padding:0.5rem;
+    margin-top: 1.5rem;
+}
+
+#hamMenu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+	top: 1rem;
+    right: 1rem;
+}
+
+#hamMenu::before {
+	content: "≡";
+    
+}
+
+#hamMenu.open::before {
+	content: "⬅️";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #e24b05;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #8bd1f1;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--accent1-color);
+    height: ;
+    align-content: center;
+    color: var(--secondary-color4);   
+    text-decoration: none; 
+}
+
+footer p {
+    padding: 0.2rem;
+}
+ 
+p {
+    padding: 1.5rem;
+}
+
+.logos {
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.3rem;
+    color: var(--secondary-color4)
+}
