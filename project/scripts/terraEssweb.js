@@ -208,18 +208,24 @@ electronic.addEventListener("click", () => {
 
 function createProductCard(filteredProducts) {
     document.querySelector(".products").innerHTML = "";
+	let newSpace=document.createElement("div");
 	let returnMain1= document.createElement("a");
 	let returnMain2= document.createElement("a");
+
+	newSpace.setAttribute("class","newSpace");	
 	returnMain1.innerHTML= `<span class="label">Return</span>`;;
 	returnMain1.setAttribute("href", "products.html");
 	returnMain1.setAttribute("id", "returnBox");
 	returnMain2.innerHTML= `<span class="label">Return</span>`;;
 	returnMain2.setAttribute("href", "products.html");
 	returnMain2.setAttribute("id", "returnBox");
-
 	document.querySelector(".products").appendChild(returnMain1);
+
+	document.querySelector(".products").appendChild(newSpace);
+
     filteredProducts.forEach(product => {
-        let card = document.createElement("div");
+		
+        let card = document.createElement("section");
         let name = document.createElement("h3");
 		let varietyPlant=document.createElement("h4");
         let size = document.createElement("p");
@@ -235,8 +241,8 @@ function createProductCard(filteredProducts) {
         img.setAttribute("src", product.imageLocation);
         img.setAttribute("alt", `${product.productName}`);
         img.setAttribute("loading", "lazy");
-		card.setAttribute("class", "productSection");
-		
+		card.setAttribute("class", "newCard");
+			
 		
         card.appendChild(name);
         card.appendChild(varietyPlant);
@@ -244,9 +250,8 @@ function createProductCard(filteredProducts) {
         card.appendChild(smallDescription);
 		card.appendChild(productCost);
         card.appendChild(img);
+		newSpace.appendChild(card);
 
-		
-        document.querySelector(".products").appendChild(card);
     });
 
 	document.querySelector(".products").appendChild(returnMain2);

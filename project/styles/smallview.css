@@ -189,19 +189,27 @@ img {
     
 }
 
-.productSection {
+.newSpace {
     display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
 }
 
-.productSection p,h4 {
-    padding: 0.5rem;    
-    width: 100%;
+.newCard p {
+    padding: 0.5rem;  
 }
 
-.productSection h3 {
+.newCard h4 {
+    padding:0.5rem;
+}
+
+.newCard h3 {
+    padding: 0.5rem 0.5rem;
     background-color: var(--primary-color3);
     width: 100%;
     text-align: center;
     color: var(--secondary-color4);
-    padding:0.8rem;
+    border-bottom: solid var(--primary-color1) 1px;
+    border-left: solid var(--primary-color1) 1px;
+    border-right: solid var(--primary-color1) 1px;
 }

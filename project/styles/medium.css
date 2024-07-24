@@ -240,6 +240,33 @@
 	
 	}
 
+	.newSpace {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		margin: 0;
+	}
+	
+	.newCard p {
+		padding: 0.5rem;  
+		justify-self: ; 
+	}
+	
+	.newCard h4 {
+		padding:0.5rem;
+		text-align: left;
+	}
+	
+	.newCard h3 {
+		padding: 0.5rem 0.5rem;
+		background-color: var(--primary-color3);
+		width: 100%;
+		text-align: center;
+		color: var(--secondary-color4);
+		border-bottom: solid var(--primary-color1) 1px;
+		border-left: solid var(--primary-color1) 1px;
+		border-right: solid var(--primary-color1) 1px;
+	}
+	
 }
 
 
