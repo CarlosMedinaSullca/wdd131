@@ -287,6 +287,49 @@
 		color: var(--secondary-color4);
 	}
 
+	.contactPage {
+		display: grid;
+		justify-content: center;
+		grid-template: auto auto auto/ 1fr 1fr;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 4rem;
+	}
+	.contactPage h1 {
+		font-size: 4rem;
+		grid-column: 1/3;
+	}
+	
+	.contactbox {
+		width: 20rem;
+		height: 15rem;
+	}
+
+	.float1 {
+		position: relative;
+		top: -4rem;
+		right: -2rem;
+	}
+
+	.float2 {
+		position: relative;
+		top: -4rem;
+		left: -1rem;
+	}
+	
+	.divForm {
+		grid-column: 1/3;
+	}
+
+	.float3 {
+		grid-column: 1/2;
+		align-self: center;
+	}
+
+	iframe {
+		grid-column: 2/3;
+	}
+
 }
 
 
