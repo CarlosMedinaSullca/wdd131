@@ -15,7 +15,7 @@
     <script src="scripts/terraEssweb.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="contactHead">
         <img src="images/logo2.webp" alt="Logo">
         <h1>TERRAEssencias</h1>
         <button id="hamMenu"></button>
@@ -27,8 +27,37 @@
             <a href="contact.html" title="Contact Us" id="contactData">Contact us</a>
         </nav>  
     </header>
-    <main>
-               
+    <main class="contactPage">
+        <h1>Contact us</h1>
+        <div class="contactbox">
+            <img src="images/email.webp">
+            <p>terraessencias.rimh@gmail.com</p>
+        </div>
+        <div class="contactbox">
+            <img src="images/call.webp">
+            <p>+59173422187</p>
+        </div>
+        <div>
+            
+            <form method="get" action="thanks.html" class="form">
+                <h2>Send us a message</h2>
+                <label for="name">Your name: <input type="text" id="name" name="name" required></label>
+                
+                <label for="email">Email: <input type="email" id="email" name="email" required>  </label>
+                             
+                <label for="message">Your message: <textarea id="message" name="message" rows="4" placeholder="Write here..." required></textarea>  </label>
+                                  
+                <button type="submit" id="formButton">Send message</button>                  
+            </form>
+        </div>
+
+        <div class="contactbox">
+            <img src="images/location.webp">
+            <p>C. Issac Attie entre Av. Las Americas y C. Avaroa</p>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.1987132732793!2d-64.73313118891656!3d-21.5390839903447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9406479be9e7965d%3A0x866eab31c4caa351!2sTERRAEssencias!5e0!3m2!1ses!2sbo!4v1721849928729!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+
     </main>
     <footer>
         <div class="social">
