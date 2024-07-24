@@ -251,3 +251,4 @@ function createProductCard(filteredProducts) {
 
 	document.querySelector(".products").appendChild(returnMain2);
 }
+
