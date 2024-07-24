@@ -212,8 +212,10 @@ function createProductCard(filteredProducts) {
 	let returnMain2= document.createElement("a");
 	returnMain1.innerHTML= `<span class="label">Return</span>`;;
 	returnMain1.setAttribute("href", "products.html");
+	returnMain1.setAttribute("id", "returnBox");
 	returnMain2.innerHTML= `<span class="label">Return</span>`;;
 	returnMain2.setAttribute("href", "products.html");
+	returnMain2.setAttribute("id", "returnBox");
 
 	document.querySelector(".products").appendChild(returnMain1);
     filteredProducts.forEach(product => {
@@ -224,8 +226,6 @@ function createProductCard(filteredProducts) {
         let smallDescription = document.createElement("p");
 		let productCost = document.createElement("p");
         let img = document.createElement("img");
-		let returnMain1= document.createElement("a");
-		let returnMain2= document.createElement("a");
 
         name.textContent = product.productName;
         varietyPlant.innerHTML = `<span class="label">Variety:</span> ${product.variety}`;

@@ -235,7 +235,7 @@
 		grid-column: 1/2;
 	}
 
-	.products {
+	.productsFoot {
 		grid-column: 2/3;
 	}
 
@@ -251,6 +251,12 @@
 	.productfirst a {
 		top:4em;
 		font-size: 4rem;
+		
+	}
+
+	.products #returnBox {
+		font-size: 2rem;
+	
 	}
 
 }

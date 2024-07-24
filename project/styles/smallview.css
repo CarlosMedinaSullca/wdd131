@@ -176,8 +176,32 @@ img {
     color: var(--accent2-color);
 }
 
-.products a {
-    display:block;
-    color: var(var(--secondary-color3));
+.products #returnBox {
+    color: var(--secondary-color3);
+    background-color: var(--primary-color3);
+    color: var(--secondary-color4)
+
+}
+
+.products #returnBox:hover {
     background-color: var(--accent2-color);
+    color:var(--secondary-color3)   
+    
+}
+
+.productSection {
+    display: grid;
+}
+
+.productSection p,h4 {
+    padding: 0.5rem;    
+    width: 100%;
+}
+
+.productSection h3 {
+    background-color: var(--primary-color3);
+    width: 100%;
+    text-align: center;
+    color: var(--secondary-color4);
+    padding:0.8rem;
 }
