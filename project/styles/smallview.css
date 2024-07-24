@@ -252,7 +252,7 @@ iframe {
     height: 20rem;
 }
 
-form {
+.form {
     display: grid;
     background-color: var(--secondary-color2);
     padding: 1rem;
