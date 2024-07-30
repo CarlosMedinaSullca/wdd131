@@ -192,7 +192,8 @@ img {
 .newCard {
     margin: 1rem;
     padding: 1rem;
-    border:solid 1px;
+    /*border:solid 1px;*/
+    box-shadow: -0.1em 0 0.8em gray;
 }
 
 .newSpace {
