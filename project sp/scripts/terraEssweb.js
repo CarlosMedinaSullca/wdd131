@@ -11,32 +11,7 @@ currentyear.innerHTML = `<span>${today.getFullYear()}</span>`;
 let oLastModif = new Date(document.lastModified);
 lastModified.innerHTML= `<span>${oLastModif}</span>`;
 
-const discountProducts = [
-	{
-		productName: "",
-		promoTime: "",
-		imageLocation: "",
-		percentDiscount: ""
-	},
-	{
-		productName: "",
-		promoTime: "",
-		imageLocation: "",
-		percentDiscount: ""
-	},
-	{
-		productName: "",
-		promoTime: "",
-		imageLocation: "",
-		percentDiscount: ""
-	},
-	{
-		productName: "",
-		promoTime: "",
-		imageLocation: "",
-		percentDiscount: ""
-	},
-]
+
 
 
 // For this array of objects, categories are as follows:
@@ -206,38 +181,76 @@ const allProducts = [
     // Add more product objects here...
   ];
 
+const discountProducts = [
+	{
+		productName: "Aceite esencial de lavanda",
+		promoTime: "Del 1 al 11 de septiembre",
+		imageLocation: "",
+		percentDiscount: "10%",
+	},
+	{
+		productName: "Aceite esencial de manzanilla",
+		promoTime: "Del 1 al 11 de septiembre",
+		imageLocation: "",
+		percentDiscount: "10%",
+	},
+	{
+		productName: "Aceite esencial de limón",
+		promoTime: "Del 1 al 11 de septiembre",
+		imageLocation: "",
+		percentDiscount: "10%",
+	},
+	{
+		productName: "Aceite esencial de copaiba",
+		promoTime: "Del 1 al 11 de septiembre",
+		imageLocation: "",
+		percentDiscount: "10%",
+	},
+];
+// const esenOil= document.querySelector("#essential");
+// const carryOil= document.querySelector("#carrier");
+// const natural= document.querySelector("#natural");
+// const electronic= document.querySelector("#humidifiers");
 
-const esenOil= document.querySelector("#essential")
-const carryOil= document.querySelector("#carrier")
-const natural= document.querySelector("#natural")
-const electronic= document.querySelector("#humidifiers")
-const discount= document.querySelector("#discount")
+// const discountAmount= document.querySelector("#discount");
 
-esenOil.addEventListener("click", () => {
-	createProductCard(allProducts.filter(product => product.ProdCategory == 1  
-	));
-  });
+// discountAmount.addEventListener("click", () => {
+	// 	createDiscountFramework(discountProducts);
+	// });
+	
+	function handlediscountAmount(){
+		createDiscountFramework(discountProducts);
+	}
+	
+	function productsfilterProductById(id){
+		createProductCard(allProducts.filter(product => product.ProdCategory == id 
+		));
+	}; 
+	
+	// const esenOil= document.querySelector("#essential");
+// esenOil.addEventListener("click",()=>productsfilterProductById(1)) 
 
-carryOil.addEventListener("click", () => {
-	createProductCard(allProducts.filter(product => product.ProdCategory == 2  
-	));
-  });
+// esenOil.addEventListener("click", () => {
+// 	createProductCard(allProducts.filter(product => product.ProdCategory == 1 ))}) 
+	
 
-natural.addEventListener("click", () => {
-	createProductCard(allProducts.filter(product => product.ProdCategory == 3  
-	));
-  });
+// carryOil.addEventListener("click", () => {
+// 	createProductCard(allProducts.filter(product => product.ProdCategory == 2  
+// 	));
+//   });
+
+// natural.addEventListener("click", () => {
+// 	createProductCard(allProducts.filter(product => product.ProdCategory == 3  
+// 	));
+//   });
 
 
-electronic.addEventListener("click", () => {
-	createProductCard(allProducts.filter(product => product.ProdCategory == 4  
-	));
-  });
+// electronic.addEventListener("click", () => {
+// 	createProductCard(allProducts.filter(product => product.ProdCategory == 4  
+// 	));
+//   });
 
-discount.addEventListener("click", () => {
-	createProductCard(allProducts.filter(product => product.ProdCategory == 1  
-	));
-  });
+
 
 
 function createProductCard(filteredProducts) {
@@ -247,10 +260,10 @@ function createProductCard(filteredProducts) {
 	let returnMain2= document.createElement("a");
 
 	newSpace.setAttribute("class","newSpace");	
-	returnMain1.innerHTML= `<span class="label">Return</span>`;;
+	returnMain1.innerHTML= `<span class="label">Return</span>`;
 	returnMain1.setAttribute("href", "products.html");
 	returnMain1.setAttribute("id", "returnBox");
-	returnMain2.innerHTML= `<span class="label">Return</span>`;;
+	returnMain2.innerHTML= `<span class="label">Return</span>`;
 	returnMain2.setAttribute("href", "products.html");
 	returnMain2.setAttribute("id", "returnBox");
 	document.querySelector(".products").appendChild(returnMain1);
@@ -291,3 +304,112 @@ function createProductCard(filteredProducts) {
 	document.querySelector(".products").appendChild(returnMain2);
 }
 
+
+
+/*
+  function createProduct(filteredProducts) {
+    document.querySelector(".home").innerHTML = "";
+	let newSpace=document.createElement("div");
+	let returnMain1= document.createElement("a");
+	let returnMain2= document.createElement("a");
+
+	newSpace.setAttribute("class","newSpace");	
+	returnMain1.innerHTML= `<span class="label">Return</span>`;
+	returnMain1.setAttribute("href", "products.html");
+	returnMain1.setAttribute("id", "returnBox");
+	returnMain2.innerHTML= `<span class="label">Return</span>`;
+	returnMain2.setAttribute("href", "products.html");
+	returnMain2.setAttribute("id", "returnBox");
+	document.querySelector(".home").appendChild(returnMain1);
+
+	document.querySelector(".home").appendChild(newSpace);
+
+    filteredProducts.forEach(product => {
+		
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+		let varietyPlant=document.createElement("h4");
+        let size = document.createElement("p");
+        let smallDescription = document.createElement("p");
+		let productCost = document.createElement("p");
+        let img = document.createElement("img");
+
+        name.textContent = product.productName;
+        varietyPlant.innerHTML = `<span class="label">Variety:</span> ${product.variety}`;
+        size.innerHTML = `<span class="label">Content:</span> ${product.Content}`;
+        smallDescription.innerHTML = `<span class="label">Description:</span> ${product.Description}.`;
+		productCost.innerHTML = `<span class="label">Price:</span> ${product.Price}`;
+        img.setAttribute("src", product.imageLocation);
+        img.setAttribute("alt", `${product.productName}`);
+        img.setAttribute("loading", "lazy");
+		card.setAttribute("class", "newCard");
+			
+		
+        card.appendChild(name);
+        card.appendChild(varietyPlant);
+        card.appendChild(size);
+        card.appendChild(smallDescription);
+		card.appendChild(productCost);
+        card.appendChild(img);
+		newSpace.appendChild(card);
+
+    });
+
+	document.querySelector(".home").appendChild(returnMain2);
+}
+
+*/
+
+
+function createDiscountFramework(discountObjects) {
+	document.querySelector(".home").innerHTML= "";
+	let newSpace=document.createElement("section");
+	let returnMain1= document.createElement("a");
+	let returnMain2= document.createElement("a");
+
+	newSpace.setAttribute("class","discountProds");	
+	returnMain1.innerHTML= `<span class="label">Return</span>`;
+	returnMain1.setAttribute("href", "index.html");
+	returnMain1.setAttribute("id", "returnBox");
+	returnMain2.innerHTML= `<span class="label">Return</span>`;
+	returnMain2.setAttribute("href", "index.html");
+	returnMain2.setAttribute("id", "returnBox");
+
+	document.querySelector(".home").appendChild(returnMain1);
+	document.querySelector(".home").appendChild(newSpace);
+
+	discountObjects.forEach(object => {
+		let textCard=document.createElement("div");
+		let name=document.createElement("h3");
+		let promoPeriod=document.createElement("p");
+		let discountperce=document.createElement("p");
+		let purchasedeButton=document.createElement("input");
+		let img=document.createElement("img");
+
+		purchasedeButton.setAttribute("type", "button");
+		purchasedeButton.setAttribute("Value", "Comprar");
+		purchasedeButton.setAttribute("id", "Buy");
+		img.setAttribute("src", object.imageLocation);
+        img.setAttribute("alt", `${object.productName}`);
+        img.setAttribute("loading", "lazy");
+		textCard.setAttribute("class", "divCard");
+
+		name.textContent= object.productName;
+		promoPeriod.innerHTML= `<span class="label1">Periodo de duración:</span>${object.promoTime}`;
+		discountperce.innerHTML= `<span class="label1">Descuento:</span> ${object.percentDiscount}`;
+		
+		textCard.appendChild(name);
+		textCard.appendChild(promoPeriod);
+		textCard.appendChild(discountperce);
+		textCard.appendChild(purchasedeButton);
+
+		newSpace.appendChild(textCard);
+		newSpace.appendChild(img);
+		document.querySelector(".home").appendChild(newSpace);
+	})
+
+	document.querySelector(".home").appendChild(returnMain2);
+
+}
+
+	

@@ -59,26 +59,27 @@
 
 	.first {
 		padding: 2rem 0;
+		position:relative;
 	}
 
 	.first h2 {
 		position: absolute;
 		z-index: 1;
 		font-size: 4rem;
-		top: 5em;
+		top: 2em;
 	}
 
 	.first p{
 		position: absolute;
 		z-index: 1;
 		font-size: 2rem;
-		bottom: 9em;
+		top: 9em;
 	}
 
 	.first input[type="button"] {
 		position: absolute;
 		z-index: 1;
-		bottom: 7em;
+		top: 16em;
 		font-size: 1.5rem;
 	}
 

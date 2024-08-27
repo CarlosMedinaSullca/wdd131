@@ -71,7 +71,7 @@
 		position: absolute;
 		z-index: 1;
 		bottom: 16em;
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 
 	.first picture {
@@ -103,6 +103,7 @@
 		grid-column: 2/3;
 		position:absolute;
 		bottom: 1rem;
+		font-size: 1rem;
 	}
 
 	.second img {
@@ -138,6 +139,7 @@
 		grid-column: 1/2;
 		position:absolute;
 		bottom: 4rem;
+		font-size: 1rem;
 	}
 
     .fourth {
@@ -166,7 +168,7 @@
 		grid-column: 2/3;
 		position:absolute;
 		bottom: 18rem;
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 	.fourth img {
 		grid-column: 2/3;
@@ -198,6 +200,15 @@
 		bottom: 1rem;
 		display: grid;
 		bottom: 2rem;
+		
+	}
+	.homeForm input[type="submit"] {
+		font-size: 1rem;
+	}
+
+	.homeForm input[type="text"],
+	input[type="email"] {
+		font-size: 1rem;
 	}
 
 	.fifth img {
@@ -242,7 +253,7 @@
 
 	.newSpace {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(300px, 33.3%));
 		margin: 0;
 	}
 

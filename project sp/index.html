@@ -16,62 +16,63 @@
 </head>
 <body>
     <header>
+      
         <img src="images/logo2.webp" alt="Logo">
         <h1>TERRAEssencias</h1>
         <button id="hamMenu"></button>
         <nav class="navigation">
-            <a href="index.html" title="Home" id="returnhome">Home</a>
-            <a href="#" title="About Us" id="aboutPage">About us</a>
-            <a href="products.html" title="Products" id="Products">Our products</a>     
-            <a href="#" title="Learn" id="academic">Learn</a>
-            <a href="contact.html" title="Contact Us" id="contactData">Contact us</a>
+            <a href="index.html" title="Home" id="returnhome">Principal</a>
+            <a href="#" title="About Us" id="aboutPage">Sobre nosotros</a>
+            <a href="products.html" title="Products" id="Products">Nuestros Productos</a>     
+            <a href="#" title="Learn" id="academic">Aprende</a>
+            <a href="contact.html" title="Contact Us" id="contactData">Contáctanos</a>
         </nav>  
     </header>
-    <main class="homePage">
+    <main class="home">
         <div class=" first">
-            <h2>Enjoy the power of nature</h2>
-            <p>For a world connected with nature and lives being enriched for it</p>
+            <h2>Disfruta el poder de la naturaleza</h2>
+            <p>Por un mundo conectado con la naturaleza y vidas enriquecidas por ella</p>
             <picture>
                 <source srcset="images/portadalarge.webp" media=" (min-width: 1500px) ">
                 <source srcset="images/portadamedium.webp" media=" (min-width: 640px) ">
                 <img src="images/portadasmall.webp" alt="A field of aromathic plants" width="1500" height="750" >
             </picture>
-            <input type="button" value="Our discounts" id="discount">
+            <input onclick="handlediscountAmount()" type="button" value="Nuestros descuentos" id="discount">
         </div>
 
         <div class=" second">
-            <h2>What are essential oils?</h2>
+            <h2>¿Que son los aceites esenciales?</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint dolorem pariatur reprehenderit placeat reiciendis ad enim delectus incidunt magnam, alias ex consectetur quo, aliquid tenetur iste sed fugit veritatis officiis commodi error dolor laborum repellendus nemo praesentium! Vel ipsum, amet cumque nostrum nam architecto laudantium velit voluptatibus iusto, quas perspiciatis!</p>
             <img src="images/boteLavanda.webp" alt="Image of lavender essential oil" loading="lazy">
-            <input type="button" value="Learn more" id="learning">
+            <input type="button" value="Aprende más" id="learning">
         </div>
 
         <div class="third">
-            <h2>What essential oils can do for you</h2>
+            <h2>¿Cómo pueden beneficiarte los aceites esenciales?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem molestias repellendus minus maiores libero consequuntur dolor rem impedit reprehenderit nostrum facilis reiciendis at, necessitatibus, accusantium quos harum iusto est vitae asperiores sequi fugit magnam soluta quibusdam. Laboriosam vel maxime repellat, ipsam perspiciatis assumenda illo neque vitae id quod ratione.</p>
             <img src="images/usingEO.webp" alt="A person using a blend of essential oild" loading="lazy">
-            <input type="button" value="Discover this world" id="discovering">
+            <input type="button" value="Descubre este mundo" id="discovering">
         </div>
         <div class="fourth">
-            <h2>How essential oils are produced</h2>
+            <h2>¿Cómo se producen los aceites esenciales?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo est. Inventore repellendus, rerum alias tempora corrupti porro sequi distinctio in mollitia quae ipsa eum ipsam accusamus saepe pariatur beatae sint non tenetur vero perspiciatis consectetur adipisci eaque. Praesentium tempore voluptatem culpa officia temporibus saepe provident exercitationem nobis. Sequi, nihil?</p>
             <img src="images/producing.webp" alt="An image of filling a distilling tank with aromathic plants" loading="lazy">
-            <input type="button" value="Know the process" id="process">
+            <input type="button" value="Conoce el proceso" id="process">
         </div>
         <div class="fifth">
-            <h2>Get the latest news and research</h2>
+            <h2>Mantente al día con la ciencia e investigación</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus cumque cum unde natus sapiente, enim vero dolorum deleniti aliquam aperiam ipsam beatae, excepturi quos architecto. Provident odio, cum eum animi explicabo architecto pariatur? Sed nesciunt nulla nobis eum consequatur libero quas. Saepe, sint tempora incidunt voluptatem doloremque optio nemo error!</p>
             <img src="images/research.webp" alt="An image of researching" loading="lazy">
             <form method="get" class="homeForm">
-                <input type="text" placeholder=" Your Name">
-                <input type="email" placeholder="Enter your email">
-                <input type="submit" value="Receive news" >
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="email">
+                <input type="submit" value="Recibir noticias" >
             </form>
         </div>
     </main>
     <footer>
         <div class="social">
-            <p>Let us keep closer</p>
+            <p>Mantengamonos en contacto</p>
             <nav class="logo">
                 <a href="https://www.facebook.com/profile.php?id=100086374120619">
                     <img src="images/face.webp" alt="Facebook logo">
@@ -95,24 +96,24 @@
         </div>
 
         <div class="productsFoot">
-            <h3>Our products</h3>
-            <a href="#" title="Products">Essential oils</a>
-            <a href="#" title="Products">Carrier oils</a>
-            <a href="#" title="Products">Diffuser</a>
-            <a href="#" title="Products">Accesories</a>
-            <a href="#" title="Products">Natural products</a>
+            <h3>Nuestros productos</h3>
+            <a href="#" title="Products">Aceites esenciales</a>
+            <a href="#" title="Products">Aceites vegetales</a>
+            <a href="#" title="Products">Difusores</a>
+            <a href="#" title="Products">Accesorios</a>
+            <a href="#" title="Products">Productos naturales</a>
         </div>
         <div class="company">
             <h3>Company</h3>
-            <a href="#" title="About US">About</a>
+            <a href="#" title="About US">Sobre nosotros</a>
             <a href="#" title="Blog">Blog</a>
-            <a href="#" title="Work with us">Work wiht us</a>
-            <a href="#" title="Contact Us">Contact Us</a>
+            <a href="#" title="Work with us">Trabaja con nosotros</a>
+            <a href="#" title="Contact Us">Contáctanos</a>
         </div>
 
         <div class="foot">
             <p>&copy;<span id="currentyear"></span> | Carlos Medina | Bolivia</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+        <p>Última modificación: <span id="lastModified"></span></p>
         </div>
     </footer>
 </body>
